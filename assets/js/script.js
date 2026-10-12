@@ -23,8 +23,8 @@ console.log(`Ciao, mi chiamo ${nome} ${cognome}.`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const a = 5;
-const b = 5;
+let a = 5;
+let b = 5;
 console.log(`${a} + ${b} = ${a + b}`);
 console.log(`${a} - ${b} = ${a - b}`);
 console.log(`${a} * ${b} = ${a * b}`);
@@ -40,15 +40,12 @@ console.log(`${a} ** ${b} = ${a ** b}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const annoNascita = "1990";
-const annoCorrente = "2026";
-const etaOggi = annoCorrente - annoNascita;
-const etaTra10Anni = etaOggi + 10;
-const eta5AnniFa = etaOggi - 5;
+const annoNascita = 1990;
+const annoCorrente = 2026;
 
-console.log(`Oggi hai ${etaOggi} anni.`);
-console.log(`tra 10 anni avrai ${etaTra10Anni} anni.`);
-console.log(`5 anni fa avevi ${eta5AnniFa} anni.`);
+console.log(`Oggi hai ${annoCorrente - annoNascita} anni.`);
+console.log(`tra 10 anni avrai ${(annoCorrente - annoNascita) + 10} anni.`);
+console.log(`5 anni fa avevi ${(annoCorrente - annoNascita)-5} anni.`);
 
 
 /* ESERCIZIO 4 — Maggiorenne?
@@ -58,7 +55,7 @@ console.log(`5 anni fa avevi ${eta5AnniFa} anni.`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const eta = 25;
+let eta = 25;
 const maggiorenne = eta >= 18;
 console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 
@@ -69,7 +66,16 @@ console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let myString = 'Francesco';
+let myNumber = 10;
+let myBoolean = true;
+let myUndefined;
+let myNull = null;
+console.log(`La variabile ${myString} è di tipo ${typeof myString}`);
+console.log(`La variabile ${myNumber} è di tipo ${typeof myNumber}`);
+console.log(`La variabile ${myBoolean} è di tipo ${typeof myBoolean}`);
+console.log(`La variabile ${myUndefined} è di tipo ${typeof myUndefined}`);
+console.log(`La variabile ${myNull} è di tipo ${typeof myNull}`);
 
 /* ESERCIZIO 6 — === vs ==
    numero = 5
@@ -79,6 +85,10 @@ console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numero = 5;
+let stringa = '5';
+console.log(`numero == stringa? ${numero == stringa}`);
+console.log(`numero === stringa? ${numero === stringa}`);
 
 /* ESERCIZIO 7 — Conversioni implicite
    Senza eseguire il codice, prevedi in commento il risultato di queste 4 espressioni.
@@ -90,6 +100,10 @@ console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// - restituisce 5 e 3
+// -restituisce 2
+// -restituisce 2 perchè true è uguale a 1
+// -restituisce 20
 
 /* ESERCIZIO 8 — Classificazione numero
    Variabile "n".
@@ -100,6 +114,14 @@ console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let n;
+n = 5;
+console.log(`n è pari: ${n%2 === 0}`);
+console.log(`n è divisibile per 3: ${n%3 === 0}`);
+console.log(`n è pari E divisibile per 3: ${n%2 === 0 && n%3 === 0}`);
+
+
+
 
 /* --EXTRA-- ESERCIZIO 9 — Triangolo
    Tre const "a", "b", "c" (lunghezze dei lati).
